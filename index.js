@@ -17,7 +17,8 @@ app.use(morgan('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-app.set('port', 3030);
+const PORT = process.env.PORT || 3000;
+app.set('port', PORT);
 
 const http = require('https');
 
