@@ -34,7 +34,7 @@ module.exports = {
       if (!isMatch)
         throw createError.Unauthorized('Password not valid');
 
-        var token = jwt.sign({ id: user.id }, process.env.TOKENSECRET, {
+        var token = jwt.sign({ id: user.id }, 'MyChatprueba1', {
           expiresIn: 86400 // 1dia
         });
 
