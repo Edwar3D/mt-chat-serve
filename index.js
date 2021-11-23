@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: true }))
 const PORT = process.env.PORT || 3000;
 app.set('port', PORT);
 
-const http = require('https');
+const http = require('http');
 
 var server = http.createServer(app).listen(app.get('port'), function () {
   console.log("Express server listening on port " + app.get('port'));
