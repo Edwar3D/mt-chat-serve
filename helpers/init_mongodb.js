@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-const DB = mychat-db;
-const DBPASSWORD = chat123view;
-const DBUSER = chatview
+const DB = "mychat-db";
+const DBPASSWORD = "chat123view";
+const DBUSER ="chatview"
 
 const mongoDB = `mongodb+srv://${DBUSER}:${DBPASSWORD}@messages.hbzua.mongodb.net/${DB}?retryWrites=true&w=majority`
 
