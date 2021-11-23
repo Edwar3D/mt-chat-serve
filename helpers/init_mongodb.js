@@ -7,7 +7,7 @@ const DBUSER ="chatview"
 const mongoDB = `mongodb+srv://${DBUSER}:${DBPASSWORD}@messages.hbzua.mongodb.net/${DB}?retryWrites=true&w=majority`
 
 
-mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
+mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => { 
     console.log('connected to MongoDB')
     connect = false;
 }).catch(err => {
