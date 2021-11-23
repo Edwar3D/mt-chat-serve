@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: true }))
 
 app.set('port', 3000);
 
-const http = require('https');
+const http = require('http');
 
 var server = http.createServer(app).listen(app.get('port'), function () {
   console.log("Express server listening on port " + app.get('port'));
